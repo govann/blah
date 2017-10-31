@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title> Punch me, smash me, hit me! Weird way to de-stress</title>
+  <script src="jquery-3.2.1.min.js"></script>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+    
+  <canvas id="canvas">
+      
+  </canvas>
+  
+  <audio id="strain" src="http://162.250.234.146/sounds/fun/strain.mp3" loop></audio>
+  <audio id="sound1" src="http://192.161.179.234/sounds/fun/track1.mp3" preload></audio>
+  <audio id="sound2" src="http://192.161.179.234/sounds/fun/track2.mp3" preload></audio>
+  <audio id="sound3" src="http://192.161.179.234/sounds/fun/track3.mp3" preload></audio>
+  <audio id="sound4" src="http://192.161.179.234/sounds/fun/track4.mp3" preload></audio>
+  <audio id="sound5" src="http://192.161.179.234/sounds/fun/track5.mp3" preload></audio>
+  <audio id="sound6" src="http://192.161.179.234/sounds/fun/track6.mp3" preload></audio>
+  <audio id="sound7" src="http://192.161.179.234/sounds/fun/track7.mp3" preload></audio>
+  <audio id="sound8" src="http://192.161.179.234/sounds/fun/track8.mp3"></audio>
+  <audio id="sound9" src="http://192.161.179.234/sounds/fun/track9.mp3"></audio>
+  
+  
+  <p> Trisler</p>
+  
+  <a class="btn"><i class="fa fa-arrow-left"></i> what da fuck is this ? omg i'm deaddd.....its really a Weird way to de-STRESS! LMFAOOOO</a>
+  <p class="foot">2017 ANDO - All right reserved | <a href="#" target="_blank">Credits &amp; attributions</a></p>
+ 
+  
+
+    <script  src="js/index.js"></script>
+    <script>
+        mySounds = [ 'sound1', 'sound2', 'sound3', 'sound4', 'sound5', 'sound6', 'sound7', 'sound8', 'sound9' ]
+        function randomSound() {
+            var index = Math.floor(Math.random() * 1000) % mySounds.length;
+            var id = mySounds[index];
+            var audioElement = document.getElementById(id);
+            audioElement.play();
+        }
+    </script>
+        
+
+</body>
+</html>
